@@ -76,9 +76,9 @@ export default function Weather() {
           </div>
         </div>
 
-        <div class="forecast" id="forecast">
-          <div class="row">
-            <div class="col-2">
+        <div className="forecast" id="forecast">
+          <div className="row">
+            <div className="col-2">
               Thu
               <img
                 src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon
@@ -86,14 +86,14 @@ export default function Weather() {
                 alt=""
                 width="42"
               />
-              <span class="max-forecast">20°</span>{" "}
-              <span class="min-forecast">10°</span>
+              <span className="max-forecast">20°</span>{" "}
+              <span className="min-forecast">10°</span>
             </div>
           </div>
           <br />
         </div>
       </div>
-      <p class="footer">
+      <p className="footer">
         <a
           href="https://github.com/Sashicake/Weather-App-SheCodes"
           target="_blank"
