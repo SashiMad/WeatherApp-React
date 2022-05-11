@@ -138,6 +138,18 @@ export default function Weather() {
               <span className="max-forecast">20°</span>{" "}
               <span className="min-forecast">10°</span>
             </div>
+            <div className="col-2">
+              Mon
+              <div>
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </div>
+              <span className="max-forecast">20°</span>{" "}
+              <span className="min-forecast">10°</span>
+            </div>
           </div>
           <br />
         </div>
