@@ -79,13 +79,62 @@ export default function Weather() {
         <div className="forecast" id="forecast">
           <div className="row">
             <div className="col-2">
+              Wed
+              <div>
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </div>
+              <span className="max-forecast">20°</span>{" "}
+              <span className="min-forecast">10°</span>
+            </div>
+            <div className="col-2">
               Thu
-              <img
-                src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon
-          }@2x.png"
-                alt=""
-                width="42"
-              />
+              <div>
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </div>
+              <span className="max-forecast">20°</span>{" "}
+              <span className="min-forecast">10°</span>
+            </div>
+            <div className="col-2">
+              Fri
+              <div>
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </div>
+              <span className="max-forecast">20°</span>{" "}
+              <span className="min-forecast">10°</span>
+            </div>
+            <div className="col-2">
+              Sat
+              <div>
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </div>
+              <span className="max-forecast">20°</span>{" "}
+              <span className="min-forecast">10°</span>
+            </div>
+            <div className="col-2">
+              Sun
+              <div>
+                <img
+                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </div>
               <span className="max-forecast">20°</span>{" "}
               <span className="min-forecast">10°</span>
             </div>
@@ -95,13 +144,13 @@ export default function Weather() {
       </div>
       <p className="footer">
         <a
-          href="https://github.com/Sashicake/Weather-App-SheCodes"
+          href="https://github.com/SashiMad/WeatherApp-React"
           target="_blank"
           rel="noreferrer"
         >
           Open-source code
         </a>
-        by Sashi Madleniak
+        &nbsp;by Sashi Madleniak
       </p>
     </div>
   );
