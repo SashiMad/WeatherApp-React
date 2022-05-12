@@ -21,6 +21,7 @@ export default function Weather() {
                 type="text"
                 placeholder="Search city"
                 className="form-control search-bar"
+                autoFocus="on"
               />
             </div>
             <div className="col-3">
@@ -35,7 +36,6 @@ export default function Weather() {
             </div>
           </div>
         </form>
-        <br />
         <br />
         <hr />
         <h1>{weatherData.city}</h1>
@@ -158,7 +158,7 @@ export default function Weather() {
         <a
           href="https://github.com/SashiMad/WeatherApp-React"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Open-source code
         </a>
