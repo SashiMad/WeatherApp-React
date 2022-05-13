@@ -2,7 +2,7 @@
   background: #f9f7fe;
 }
 .search-button {
-  background: #d6d6d6;
+  background: #dedede;
 }
 
 i {
@@ -31,15 +31,17 @@ i {
   padding-left: 0px;
   top: -40px;
 }
-.currentDegree,
+.currentDegree {
+  font-size: 90px;
+}
 .weatherIcon {
-  font-size: 80px;
+  padding-right: 10px;
 }
 
 .units {
   position: relative;
   font-size: 16px;
-  top: -38px;
+  top: -52px;
 }
 .currentWeather .active {
   color: rgb(33, 33, 33);
