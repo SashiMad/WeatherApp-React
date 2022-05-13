@@ -3,6 +3,13 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+  let city = "New York";
+  let apiKey = "9d758950ce365ca1ca1f6506e3b99115";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=&{apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
   let weatherData = {
     city: "Sydney",
     temperature: 29,
