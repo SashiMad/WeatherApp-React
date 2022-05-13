@@ -171,8 +171,8 @@ export default function Weather(props) {
             rel="noopener noreferrer"
           >
             Open-source code
-          </a>
-          &nbsp;by Sashi Madleniak
+          </a>{" "}
+          by Sashi Madleniak
         </p>
       </div>
     );
