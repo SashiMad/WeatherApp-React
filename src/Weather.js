@@ -58,7 +58,12 @@ export default function Weather(props) {
                 />
               </div>
               <div className="col-3">
-                <button className="btn btn-dark w-100">Current📍</button>
+                <button className="btn btn-dark w-100">
+                  Current
+                  <span role="img" aria-label="current location">
+                    📍
+                  </span>
+                </button>
               </div>
             </div>
           </form>
