@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
@@ -151,7 +152,6 @@ export default function Weather() {
               <span className="min-forecast">10°</span>
             </div>
           </div>
-          <br />
         </div>
       </div>
       <p className="footer">
