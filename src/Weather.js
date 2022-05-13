@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
@@ -44,128 +45,7 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-          <br />
-          <hr />
-          <h1>{weatherData.city}</h1>
-          <div className="row">
-            <div className="col-6">
-              <div className="date">
-                <FormattedDate date={weatherData.date} />
-              </div>
-              <div className="description text-capitalize">
-                {weatherData.description}
-              </div>
-              <div className="col-6">
-                <div className="attributes">
-                  <div>
-                    Humidity: <span>{weatherData.humidity}</span> %
-                  </div>
-                  <div>
-                    Wind: <span>{weatherData.wind}</span> m/h
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-6">
-              <div className="currentWeather">
-                <span className="weatherIcon">
-                  <img
-                    src={weatherData.icon}
-                    alt={weatherData.description}
-                  ></img>
-                </span>
-                <span className="currentDegree">
-                  {Math.round(weatherData.temperature)}
-                </span>
-                <span className="units">
-                  <a href="number" className="active">
-                    °C
-                  </a>{" "}
-                  |
-                  <a href="number" id="fahrenheit-link">
-                    °F
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="forecast" id="forecast">
-            <div className="row">
-              <div className="col-2">
-                Wed
-                <div>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d@2x.png"
-                    alt=""
-                    width="42"
-                  />
-                </div>
-                <span className="max-forecast">20°</span>{" "}
-                <span className="min-forecast">10°</span>
-              </div>
-              <div className="col-2">
-                Thu
-                <div>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d@2x.png"
-                    alt=""
-                    width="42"
-                  />
-                </div>
-                <span className="max-forecast">20°</span>{" "}
-                <span className="min-forecast">10°</span>
-              </div>
-              <div className="col-2">
-                Fri
-                <div>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d@2x.png"
-                    alt=""
-                    width="42"
-                  />
-                </div>
-                <span className="max-forecast">20°</span>{" "}
-                <span className="min-forecast">10°</span>
-              </div>
-              <div className="col-2">
-                Sat
-                <div>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d@2x.png"
-                    alt=""
-                    width="42"
-                  />
-                </div>
-                <span className="max-forecast">20°</span>{" "}
-                <span className="min-forecast">10°</span>
-              </div>
-              <div className="col-2">
-                Sun
-                <div>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d@2x.png"
-                    alt=""
-                    width="42"
-                  />
-                </div>
-                <span className="max-forecast">20°</span>{" "}
-                <span className="min-forecast">10°</span>
-              </div>
-              <div className="col-2">
-                Mon
-                <div>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d@2x.png"
-                    alt=""
-                    width="42"
-                  />
-                </div>
-                <span className="max-forecast">20°</span>{" "}
-                <span className="min-forecast">10°</span>
-              </div>
-            </div>
-          </div>
+          <WeatherInfo data={weatherData} />
         </div>
         <p className="footer">
           <a
