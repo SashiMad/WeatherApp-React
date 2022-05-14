@@ -31,86 +31,9 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <div className="currentWeather">
             <span className="weatherIcon">
-              <WeatherIcon code={props.data.icon} />
+              <WeatherIcon code={props.data.icon} size={64} />
             </span>
             <WeatherTemperature celsius={props.data.temperature} />
-          </div>
-        </div>
-      </div>
-
-      <div className="forecast" id="forecast">
-        <div className="row">
-          <div className="col-2">
-            Wed
-            <div>
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <span className="max-forecast">20°</span>{" "}
-            <span className="min-forecast">10°</span>
-          </div>
-          <div className="col-2">
-            Thu
-            <div>
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <span className="max-forecast">20°</span>{" "}
-            <span className="min-forecast">10°</span>
-          </div>
-          <div className="col-2">
-            Fri
-            <div>
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <span className="max-forecast">20°</span>{" "}
-            <span className="min-forecast">10°</span>
-          </div>
-          <div className="col-2">
-            Sat
-            <div>
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <span className="max-forecast">20°</span>{" "}
-            <span className="min-forecast">10°</span>
-          </div>
-          <div className="col-2">
-            Sun
-            <div>
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <span className="max-forecast">20°</span>{" "}
-            <span className="min-forecast">10°</span>
-          </div>
-          <div className="col-2">
-            Mon
-            <div>
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt=""
-                width="42"
-              />
-            </div>
-            <span className="max-forecast">20°</span>{" "}
-            <span className="min-forecast">10°</span>
           </div>
         </div>
       </div>

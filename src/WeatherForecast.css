@@ -1,0 +1,8 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast-temperature-min,
+.WeatherForecast-day {
+  color: #828388;
+}
