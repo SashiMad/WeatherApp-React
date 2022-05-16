@@ -43,7 +43,7 @@ export default function Weather(props) {
         <div className="weatherapp">
           <form onSubmit={handleSubmit}>
             <div className="row">
-              <div className="col-6">
+              <div className="col-8">
                 <input
                   onChange={handleCityChange}
                   type="text"
@@ -52,20 +52,12 @@ export default function Weather(props) {
                   autoFocus="on"
                 />
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <input
                   type="submit"
                   value="Search"
                   className="form-control search-button"
                 />
-              </div>
-              <div className="col-3">
-                <button className="btn btn-dark w-100">
-                  Current
-                  <span role="img" aria-label="current location">
-                    📍
-                  </span>
-                </button>
               </div>
             </div>
           </form>
